@@ -9,13 +9,13 @@ public class Calc {
         Calc obj = new Calc();
 
         System.out.print("Enter First Number: ");
-        int x = sc.nextInt();
+        double x = sc.nextDouble();
 
         System.out.print("Enter Operation: ");
         String oper = sc.next();
 
         System.out.print("Enter Second Number: ");
-        int y = sc.nextInt();
+        double y = sc.nextDouble();
 
         if (oper.equals("+"))
             obj.add(x,y);
@@ -29,16 +29,16 @@ public class Calc {
             System.out.println("Input not recognized");
 
     }
-    void add(int x,int y){
+    void add(double x,double y){
         System.out.println("Sum = " + (x+y));
     }
-    void sub(int x,int y){
+    void sub(double x,double y){
         System.out.println("Sub = " + (x-y));
     }
-    void mul(int x,int y){
+    void mul(double x,double y){
         System.out.println("Mul = " + (x*y));
     }
-    void div(int x,int y){
+    void div(double x,double y){
         if (y !=0 )
             System.out.println("Div = " + (x/y));
         else
